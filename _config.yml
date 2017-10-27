@@ -1,0 +1,43 @@
+# Site settings
+title: Wojciech Krysmann
+description: ''
+url: 'https//kryss.blog/'
+baseurl: ''
+# google_analytics: 'UA-XXXXXX-X'
+# disqus_shortname: 'your-disqus-name'
+
+author:
+  name: 'Wojciech Krysmann'
+  email: wojciech@krysmann.pl
+  twitter_username: 
+  facebook_username: wkrysmann
+  github_username:  wkrysmann
+  linkedin_username:  w.krysmann
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
+
+# Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
+markdown: kramdown
+highlighter: rouge
+
+sass:
+    sass_dir: _sass
+    style: compressed
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+gems: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
